@@ -1,0 +1,28 @@
+<!-- views/fruits/new.ejs -->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Create a Fruit</title>
+    </head>
+    <body>
+        <h1>Create a New Fruit!</h1>
+        <!-- Action and Method are Very important!! -->
+        <!-- Action is a referrance to the PATH and the methos is POST to that path -->
+        <form action="/fruits" method="POST">
+            <label for="name">Name:</label>
+            <!-- Name is used as a key in the req.body -->
+            <input type="text" name="name" id="name" />
+        
+            <label for="isReadyToEat">Ready to Eat?</label>
+            <input type="checkbox" name="isReadyToEat" id="isReadyToEat" />
+
+            <label for="price">Price</label>
+            <input type="text" name="price">
+        
+            <button type="submit">Add Fruit</button>
+        </form>
+    </body>
+</html>

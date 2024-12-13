@@ -3,6 +3,7 @@ const mongoose = require('mongoose');
 const fruitSchema = new mongoose.Schema({
     name: String,
     isReadyToEat: Boolean,
+    price: Number,
 });
 
 //Capitalized classes signals that its a class, responds to ongoose model actions
